@@ -5,9 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webpack restaurant page</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        font-family: sans-serif;
+      }
+      body {
+        background-color: #261b30;
+      }
+      .header {
+        display: flex;
+        color: white;
+        padding: 0 50px;
+        align-items: center;
+        height: 100px;
+        background-color: #8b64b1;
+      }
+
+      .header h1 {
+        font-size: 42px;
+      }
+
+      .header ul {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+        margin-left: auto;
+      }
+      .header a {
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+      }
+      .header a:visited {
+        color: white;
+      }
+      .container {
+        padding: 50px;
+      }
+      .description {
+        display: flex;
+        align-items: center;
+        background-color: #664983;
+        border-radius: 15px;
+        padding-right: 150px;
+        gap: 20px;
+        color: #ded3e9;
+        font-size: 22px;
+      }
+      .description img {
+        border-radius: 15px 0 0 15px;
+      }
+    </style>
   </head>
   <body>
-    <div class="content"></div>
+    <div class="header">
+      <h1>Restaurant page</h1>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Menu</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="description">
+        <img src="../food.jpg" alt="food" style="height: 300px" />
+        We are a tight-knit, fun-loving, devoted team of local cooks spreading
+        the gospel of good times and good food. We offer limited capacity onsite
+        events in our restaurant kitchen space. And worry not, our krewe will
+        travel to your destination of choice from hotel ballrooms to private
+        kitchens to entertain groups of all sizes. We cook, we tell stories, we
+        deliver informative culinary demonstrations and lectures, but most of
+        all we treat every event like you're a guest at our dinner table. Join
+        us!
+      </div>
+    </div>
+
     <script src="bundle.js"></script>
   </body>
 </html>
