@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("console.log(\"this works.\");\r\n\n\n//# sourceURL=webpack://webpack-restaurant/./src/index.js?");
+eval("function pageLoad() {\r\n  const body = document.querySelector(\"body\");\r\n  const header = document.createElement(\"div\");\r\n  header.classList.add(\"header\");\r\n\r\n  const h1 = document.createElement(\"h1\");\r\n  h1.textContent = \"Restaurant page\";\r\n\r\n  const ul = document.createElement(\"ul\");\r\n  const list = [\"Home\", \"Contact\", \"Menu\"];\r\n  for (let i = 0; i < 3; i++) {\r\n    const li = document.createElement(\"li\");\r\n    li.textContent = list[i];\r\n    ul.appendChild(li);\r\n  }\r\n  header.appendChild(h1);\r\n  header.appendChild(ul);\r\n  body.appendChild(header);\r\n}\r\n\r\npageLoad();\r\n\n\n//# sourceURL=webpack://webpack-restaurant/./src/index.js?");
 
 /***/ })
 
