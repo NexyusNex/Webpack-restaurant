@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ contactLoad)\n/* harmony export */ });\nfunction contactLoad() {\r\n  const container = document.querySelector(\".container\");\r\n  const desc = document.createElement(\"div\");\r\n  desc.classList.add(\"description\");\r\n\r\n  const img = document.createElement(\"img\");\r\n  img.setAttribute(\"alt\", \"food\");\r\n  img.setAttribute(\"src\", \"../food.jpg\");\r\n  const text = document.createElement(\"div\");\r\n  text.textContent = \"Contact us!\";\r\n\r\n  desc.appendChild(img);\r\n  desc.appendChild(text);\r\n  container.appendChild(desc);\r\n}\r\n\n\n//# sourceURL=webpack://webpack-restaurant/./src/contact.js?");
+
+/***/ }),
+
 /***/ "./src/home.js":
 /*!*********************!*\
   !*** ./src/home.js ***!
@@ -30,13 +40,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pag
 
 /***/ }),
 
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ menuLoad)\n/* harmony export */ });\nfunction menuLoad() {\r\n  const container = document.querySelector(\".container\");\r\n  const desc = document.createElement(\"div\");\r\n  desc.classList.add(\"description\");\r\n\r\n  const img = document.createElement(\"img\");\r\n  img.setAttribute(\"alt\", \"food\");\r\n  img.setAttribute(\"src\", \"../food.jpg\");\r\n  const text = document.createElement(\"div\");\r\n  text.textContent = \"This is a menu\";\r\n\r\n  desc.appendChild(img);\r\n  desc.appendChild(text);\r\n  container.appendChild(desc);\r\n}\r\n\n\n//# sourceURL=webpack://webpack-restaurant/./src/menu.js?");
+
+/***/ }),
+
 /***/ "./src/pageload.js":
 /*!*************************!*\
   !*** ./src/pageload.js ***!
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n\r\n\r\nfunction pageLoad() {\r\n  const container = document.querySelector(\".container\");\r\n  //header\r\n  const header = document.createElement(\"div\");\r\n  header.classList.add(\"header\");\r\n\r\n  const h1 = document.createElement(\"h1\");\r\n  h1.textContent = \"Restaurant page\";\r\n\r\n  const ul = document.createElement(\"ul\");\r\n  const list1 = document.createElement(\"li\");\r\n  const home = document.createElement(\"a\");\r\n  (0,_home__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n  home.textContent = \"Home\";\r\n  home.addEventListener(\"click\", () => {\r\n    container.innerHTML = \"\";\r\n    (0,_home__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n  });\r\n\r\n  list1.appendChild(home);\r\n  ul.appendChild(list1);\r\n\r\n  header.appendChild(h1);\r\n  header.appendChild(ul);\r\n  container.parentNode.insertBefore(header, container);\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pageLoad());\r\n\n\n//# sourceURL=webpack://webpack-restaurant/./src/pageload.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contact */ \"./src/contact.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n\r\n\r\n\r\n\r\nfunction pageLoad() {\r\n  const container = document.querySelector(\".container\");\r\n  //header\r\n  const header = document.createElement(\"div\");\r\n  header.classList.add(\"header\");\r\n\r\n  const h1 = document.createElement(\"h1\");\r\n  h1.textContent = \"Restaurant page\";\r\n\r\n  const ul = document.createElement(\"ul\");\r\n\r\n  const list1 = document.createElement(\"li\");\r\n  const home = document.createElement(\"a\");\r\n  (0,_home__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n  home.textContent = \"Home\";\r\n  home.addEventListener(\"click\", () => {\r\n    container.innerHTML = \"\";\r\n    (0,_home__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n  });\r\n\r\n  const list2 = document.createElement(\"li\");\r\n  const contact = document.createElement(\"a\");\r\n  contact.textContent = \"Contact\";\r\n  contact.addEventListener(\"click\", () => {\r\n    container.innerHTML = \"\";\r\n    (0,_contact__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n  });\r\n\r\n  const list3 = document.createElement(\"li\");\r\n  const menu = document.createElement(\"a\");\r\n  menu.textContent = \"Menu\";\r\n  menu.addEventListener(\"click\", () => {\r\n    container.innerHTML = \"\";\r\n    (0,_menu__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\n  });\r\n\r\n  list1.appendChild(home);\r\n  list2.appendChild(contact);\r\n  list3.appendChild(menu);\r\n  ul.append(list1, list2, list3);\r\n\r\n  header.appendChild(h1);\r\n  header.appendChild(ul);\r\n  container.parentNode.insertBefore(header, container);\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pageLoad());\r\n\n\n//# sourceURL=webpack://webpack-restaurant/./src/pageload.js?");
 
 /***/ })
 
